@@ -14,12 +14,12 @@ fn main() -> std::io::Result<()> {
 
     println!("{} {}",flg,argc);
 
-    if cmd == ln {
+   // if cmd == ln {
         // Ok();
         // Err();
-        println!("ok ln{} !",cmd);
+      //  println!("ok ln{} !",cmd);
 
-    }
+   // }
 
         match argc {
             5 => {
@@ -27,7 +27,7 @@ fn main() -> std::io::Result<()> {
                 let dir1 = &args[3];
                 let dir2 = &args[4];
                 println!("{} to {}",dir1,dir2);
-                let options = fs_extra::dir::CopyOptions::new();
+                let options = fs_extra::dir::CopyOptions::new(); /* dir1 to dir2 is not working right now */
                 // copy(dir1, dir2, &options);
             
 
