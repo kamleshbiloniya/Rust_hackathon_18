@@ -3,7 +3,10 @@ use fs_extra::dir::*;
 use fs_extra::error::*;
 use std::fs;
 use std::env;
-
+/* please use command line argument like
+$cargo run scp file1 file2
+or $cargo run scp -r dir1 dir2
+*/
 fn main() -> std::io::Result<()> {
     let args: Vec<String> = env::args().collect();
     let cmd = &args[1];
